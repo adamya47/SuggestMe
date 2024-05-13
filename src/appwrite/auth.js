@@ -55,6 +55,7 @@ async createAccount({email,password}){
         return await this.account.get();
         
     } catch (error) {
+        
         console.log("Appwrite Service :: getCurrentUser::error",error)
     }
     return null;//taki kuch na kuch toh return ho just another way can also do if and else
